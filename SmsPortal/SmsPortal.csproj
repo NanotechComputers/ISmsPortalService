@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageId>ISmsPortalService</PackageId>
+        <Version>1.0.2</Version>
+        <Title>SmsPortal Service and Wrapper</Title>
+        <Authors>Kevin Deason</Authors>
+        <Company>Nanotech Computers</Company>
+        <Description>.NET Standard Service and Wrapper for the SmsPortal API.</Description>
+        <Copyright>Copyright 2018 Nanotech Computers (Pty) Ltd</Copyright>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageProjectUrl>https://github.com/NanotechComputers/ISmsPortalService</PackageProjectUrl>
+        <PackageReleaseNotes>
+            
+            ## 1.0.2 Changed Cost and CostBreakDown cost types to Decimal
+            
+            ## 1.0.1 Fixed Bug in Collection Extensions
+            
+            ## 1.0.0 - Initial Public Release
+            * Added ability to send sms messages
+        </PackageReleaseNotes>
+        <PackageTags>sms smsportal</PackageTags>
+        <PackageOutputPath>$(SolutionDir)\dist\nuget\</PackageOutputPath>
+        <RepositoryUrl>https://github.com/NanotechComputers/ISmsPortalService</RepositoryUrl>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <ReleaseVersion>1.0.2</ReleaseVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1"/>
+        <PackageReference Include="Microsoft.Extensions.Options" Version="2.1.1"/>
+        <PackageReference Include="Newtonsoft.Json" Version="11.0.2"/>
+        <PackageReference Include="ServiceStack.Text.Core" Version="5.1.0"/>
+    </ItemGroup>
+</Project>
